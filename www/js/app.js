@@ -42,8 +42,8 @@ angular.module('Travel', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-    .state('tab.list-detail', {
-      url: '/find/:listID',
+    .state('tab.find-detail', {
+      url: '/find/:listId',
       views: {
         'tab-find': {
           templateUrl: 'templates/find-detail.html',

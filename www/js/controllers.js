@@ -64,8 +64,8 @@ angular.module('starter.controllers', [])
     }]
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams,find) {
-  $scope.list = find.get($stateParams.listID);
+.controller('ChatDetailCtrl', function($scope, $stateParams,lists) {
+  $scope.list = lists.get($stateParams.listId);
 })
 
 .controller('AccountCtrl', function($scope) {
