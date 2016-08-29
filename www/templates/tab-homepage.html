@@ -1,0 +1,57 @@
+<ion-view view-title="首页">
+      <ion-header-bar align-title="center" class="bar-calm">
+            <div class="padding">深圳 <i class="icon ion-ios-arrow-down"></i></div>
+            <div class="h1 title">出游</div>
+            <button class="button button-icon icon ion-email-unread">
+            </button>
+      </ion-header-bar>
+      <ion-content>
+            <ion-slide-box auto-play="true" does-continue="true" slide-interval="1000" show-pager="true" style="height:150px; active-slide="
+                  {{index}} " pager-click="go(index) ">
+                  <ion-slide>
+                  <img src="img/img1.jpg " alt=" " height="150px " width="100% ">
+                  </ion-slide>
+                  <ion-slide>
+                        <img src="img/img2.jpg " alt=" "  height="150px "  width="100% ">
+                  </ion-slide>
+                  <ion-slide>
+                  <img src="img/img3.jpg " alt=" "  height="150px "  width="100% ">
+                  </ion-slide>
+                  <ion-slide>
+                        <img src="img/img4.jpg " alt=" "  height="150px "   width="100% ">
+                  </ion-slide>
+                  <ion-slide>
+                  <img src="img/img5.jpg " alt=" "  height="150px "   width="100% ">
+                  </ion-slide>
+            </ion-slide-box>
+             <div class="padding ">
+                  <div class="row " style="font-size: 12px; " >
+                        <div class="col col-25 text-center " ng-repeat="item in items ">
+                              <span><img src="{{item.img}} "></span><br>
+                              <span>{{item.name}}</span>
+                        </div>
+                  </div>
+           </div>
+           <ion-list> 
+                <ion-item ng-repeat="data in datas ">
+                  <div class="row ">
+                        <div class="col col-20 "><img src="{{data.img}} "></div>
+                        <div  class="col col-60" style="line-height: 30px;" >{{data.name}}</div>
+                         <div class="col col-20"> <i class="badge badge-positive ">新</i></div>
+                  </div>
+                  <div style="margin-bottom:10px ;">{{data.title}}</div>
+                  <div><img src="{{data.titleimg}} "  width="100% "></div>
+                  <div class="row ">
+                        <div class="col col-50 text-left ">
+                              <i class="icon ion-person "></i>
+                             {{data.names}}
+                        </div>
+                        <div class="col col-50 text-right ">
+                              <i class="icon ion-chatbubble-working "></i>
+                              {{data.coum}}
+                        </div>
+                  </div>
+                  </ion-item>
+                  </ion-list>
+      </ion-content>
+</ion-view>

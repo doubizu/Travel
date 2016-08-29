@@ -1,0 +1,17 @@
+<ion-view view-title="我">
+  <ion-header-bar align-title="center" class="bar-calm">
+            <div class="h1 title">我</div>
+  </ion-header-bar>
+  <ion-content>
+    <img src="img/img1.jpg" alt="" width="100%" height="150px">
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar-left item-icon-right" ng-repeat="my in mys"  type="item-text-wrap" href="#/tab/my/{{my.id}}">
+          <img src="{{my.img}}" alt="">
+          <div>
+            <h3>{{my.name}}</h3>
+          </div>
+          <i class="icon ion-ios-arrow-right"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
